@@ -1,0 +1,76 @@
+/* Interactive Styling */
+
+@font-face {
+  font-family: "Anybody";
+  src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/ETCAnybodyPB.woff2") 
+  format("woff2-variations");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 0 900;
+}
+
+h2 span {
+  font-size: var(--fontSize);
+  text-transform: uppercase;
+  font-variation-settings: "wght" 200;
+
+  will-change: font-variation-settings;
+  text-rendering: optimizeSpeed;
+  pointer-events: none;
+}
+
+/* OTHER STYLING */
+
+:root {
+  --fontSize: 128px;
+  --fontSize: 10.5vw;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Anybody", Courier, monospace;
+  color: #314569;
+  background: rgb(213, 225, 237);
+  background: linear-gradient(
+    135deg,
+    rgba(213, 225, 237, 1) 0%,
+    rgba(196, 209, 227, 1) 100%
+  );
+}
+
+main {
+  padding: 6.5vw 12.75vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  margin: 32px;
+  line-height: 8vw;
+  padding: 32px;
+  background: #ecf3fa;
+  background: linear-gradient(135deg, #ecf3fa 0%, #e3edf7 100%);
+  border-radius: 24px;
+  box-shadow: 4px 4.5px 3.6px rgba(0, 0, 0, 0.014),
+    4px 12.5px 10px rgba(0, 0, 0, 0.02), 4px 30.1px 24.1px rgba(0, 0, 0, 0.026),
+    4px 100px 80px rgba(0, 0, 0, 0.04);
+}
