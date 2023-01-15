@@ -1,0 +1,7 @@
+Hello World!
+
+This is just a test email for a Mailing Client project using Python. 
+
+Best regards, 
+
+Brent Goodman
