@@ -4,7 +4,7 @@ import threading
 
 # Use code below instead of input for pre-defined target IP Address or Domain
 # target = '10.0.0.1'  # target = 'https://www.fakewebsite.com
-target = input('IP Address or Domain Name: ')
+target = input('IP Address or Domain Name (ex. google.com) - Hit <Enter> for Default: ') or 'google.com'
 queue = Queue()
 open_ports = []
 
@@ -59,12 +59,17 @@ def run_scanner(threads, mode):
 
     print("Open ports are:", open_ports)
 
-thread = input('# of threads to run from 50-100 in increments of 10: ')
-method = input('Select Port Scan mode 1, 2, 3, or 4 (1 = Standard Ports 1 - 1,024, 2 = Exnteded Ports 1 - 49,152, 3 = Common Ports, 4 = Custom Ports): ')
+thread = input('# of threads to run from 50-100 in increments of 10 - Hit <Enter> for Default: ') or '100'
+method = input('Select Scan mode 1 - 4 (1 [Standard Ports 1 - 1,024], 2 [Exnteded Ports 1 - 49,152], 3 [Common Ports], 4 [Custom Ports - Additional Prompt]: ') or '3'
 run_scanner(int(thread), int(method))
 
 
+        # Only scan your own networks using this tool. Any use besides this is at your own risk.
+
+
         # THIS IS THE SLOW METHOD FOR EDUCATIONAL UNDERSTANDING
+        # We utilize Queue to run multiple instances, which 
+        # increases output speed by 80% from the below method.
 
         #for port in range(1, 1024):
             #result = portscan(port)
