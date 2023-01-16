@@ -5,4 +5,4 @@ def replace_word():
     word_replacement = input("Enter the word replacement word: ")
     print(str.replace(word_to_replace, word_replacement))
 
-replace_word
+replace_word()

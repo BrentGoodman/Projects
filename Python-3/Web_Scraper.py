@@ -8,31 +8,36 @@ from bs4 import BeautifulSoup
 
 # Prefilled Function for interactive input
 
-def webScraper():
-    url = input('Enter URL including https:// here (ex. https://google.com): ')
-    r = requests.get(url)
-    soup = BeautifulSoup (r.content, 'lxml')
-    search = soup.find_all(
-        input('Enter HTML field type (ex. h2, h1, title, p, etc..): '), {
-            'class': input('Enter HTML Class for better results or just leave blank: ')
-            })
-    for s in search:
-        print(s)
-webScraper()
-
-# Prefilled Function to for preview
-
 import requests
 from bs4 import BeautifulSoup
 
+def print_title(r):
+    print('WEBSITE HEADER: \n')
+    for key, value in r.items(): 
+        print('{} ==>> ({}) \n'.format(key, value))
+    print('\n')
+
 def webScraper():
-    url = 'https://brentgoodman.github.io/resume'
-    r = requests.get(url)
-    soup = BeautifulSoup (r.content, 'lxml')
-    search = soup.find_all(('h1', 'h2', 'h3', 'p', 'span'), )
-    for s in search:
-      print(s.getText(), print(''))
+    url = input('Enter URL including https:// here (ex. https://google.com): ')
+    result = requests.get(url)
+    if result.status_code == 200:
+        print('\n', 'Website status "{}" => Website is live. \n'.format(result.status_code))
+        print_title(result.headers)
+        soup = BeautifulSoup (result.content, 'lxml')
+        search = soup.find_all(
+          input('Enter HTML field type (ex. h2, h1, title, p, etc..): ') or 
+          ('title', 'h1', 'h2', 'h3', 'h4', 'span', 'p', 'a', 'li', 'ul', 'div'), 
+          {'class': input('Enter HTML Class for better results or just leave blank: ') or ''
+          })
+        for s in search:
+            print(s.getText(), print(''))
 webScraper()
+
+
+
+
+
+
 
 
 
