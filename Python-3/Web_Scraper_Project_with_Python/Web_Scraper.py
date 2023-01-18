@@ -6,11 +6,6 @@
 import requests
 from bs4 import BeautifulSoup
 
-# Prefilled Function for interactive input
-
-import requests
-from bs4 import BeautifulSoup
-
 def print_title(r):
     print('WEBSITE HEADER: \n')
     for key, value in r.items(): 
@@ -18,7 +13,7 @@ def print_title(r):
     print('\n')
 
 def webScraper():
-    url = input('Enter URL including https:// here (ex. https://google.com): ')
+    url = input('Enter URL including https:// here (ex. https://google.com): ') or 'google.com'
     result = requests.get(url)
     if result.status_code == 200:
         print('\n', 'Website status "{}" => Website is live. \n'.format(result.status_code))
