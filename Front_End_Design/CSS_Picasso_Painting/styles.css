@@ -1,18 +1,5 @@
-.split-vertical1 {
-  width: 50%;
-  height: 100%;
-  float: left;
-}
-
-.split-vertical2 {
-  width: 50%;
-  height: 100%;
-  float: right;
-}
-
 body {
     background-color: rgb(184, 132, 46);
-    display: in;
   }
   
   #back-wall {
