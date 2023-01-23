@@ -99,6 +99,18 @@
 | :diamond_shape_with_a_dot_inside: | Intermediate Machine Learning | Python | :small_blue_diamond: Missing Values <br> :small_blue_diamond: Categorical Variables <br> :small_blue_diamond: Pipelines <br> :small_blue_diamond: Cross-Validation <br> :small_blue_diamond: XGBoost <br> :small_blue_diamond: Data Leakage  |
 
 
+<br><br>
+
+<h3 id="ruby">Ruby</h3>
+
+***
+
+<br>
+
+|            |      Projects        |       Area        |       Skills       |
+| :--------: | :--------: | :--------: | :-------- |
+| :diamond_shape_with_a_dot_inside: | Tournament Results | Ruby | :small_blue_diamond: Ruby <br> :small_blue_diamond: Functions <br> :small_blue_diamond: Classes <br> :small_blue_diamond: Input and Output <br> :small_blue_diamond: Case's <br> :small_blue_diamond: Formatting |
+
 
 <!-- ***
 
@@ -135,5 +147,6 @@
 | :diamond_shape_with_a_dot_inside: |  |  |  |
 | :diamond_shape_with_a_dot_inside: |  |  |  |
 | :diamond_shape_with_a_dot_inside: |  |  |  | --!>
+
 
 

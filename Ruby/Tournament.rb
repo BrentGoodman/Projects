@@ -1,8 +1,3 @@
-input = Allegoric Alaskans;Blithering Badgers;win
-break
-
-
-
 class Tournament
   def self.tally(input)
     matches = input.split("\n").map { |match| match.split(";") }
@@ -10,6 +5,7 @@ class Tournament
       team1, team2, result = match
       scores[team1] ||= { w: 0, d: 0, l: 0 }
       scores[team2] ||= { w: 0, d: 0, l: 0 }
+      
       case result
       when "win"
         scores[team1][:w] += 1
@@ -21,13 +17,17 @@ class Tournament
         scores[team1][:d] += 1
         scores[team2][:d] += 1
       end
+
     end
+
     results.each do |team, scores|
       results[team][:mp] = scores.values.reduce(:+)
       results[team][:p]  = (scores[:w] * 3 + scores[:d])
     end
+
     format_results(results)
   end
+
   def self.format_results(results)
     sorted_results = results.sort_by { |team, result| [-result[:p], team] }
     formatted = sorted_results.map do |team, result|
@@ -38,22 +38,26 @@ class Tournament
       losses = result[:l ].to_s.rjust(2)
       "#{team.ljust(30)} | #{played} | #{wins} | #{draws} | #{losses} | #{points}\n"
     end
+
     header = "Team                           | MP |  W |  D |  L |  P\n"
     header + formatted.join
   end
+  
 end
-
-
 
 =begin
 
-# Testing Parameters in order to pass.
-    
-require 'minitest/autorun'
-require_relative 'tournament'
+The code below was the system generated code to test the code above
+I did not write the code below this section. 
+
+This is checking the code that I wrote above to ensure it is handling
+the input variables.
+
+=end
+
+
 class TournamentTest < Minitest::Test
   def test_just_the_header_if_no_input
-    # skip
     input = <<~INPUT
  
     INPUT
@@ -62,6 +66,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_a_win_is_three_points_a_loss_is_zero_points
     skip
     input = <<~INPUT
@@ -74,6 +79,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_a_win_can_also_be_expressed_as_a_loss
     skip
     input = <<~INPUT
@@ -86,6 +92,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_a_different_team_can_win
     skip
     input = <<~INPUT
@@ -98,6 +105,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_a_draw_is_one_point_each
     skip
     input = <<~INPUT
@@ -110,6 +118,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_there_can_be_more_than_one_match
     skip
     input = <<~INPUT
@@ -123,6 +132,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_there_can_be_more_than_one_winner
     skip
     input = <<~INPUT
@@ -136,6 +146,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_there_can_be_more_than_two_teams
     skip
     input = <<~INPUT
@@ -151,6 +162,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_typical_input
     skip
     input = <<~INPUT
@@ -170,6 +182,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_incomplete_competition_not_all_pairs_have_played
     skip
     input = <<~INPUT
@@ -187,6 +200,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_ties_broken_alphabetically
     skip
     input = <<~INPUT
@@ -206,6 +220,7 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
   def test_ensure_points_sorted_numerically
     skip
     input = <<~INPUT
@@ -222,6 +237,5 @@ class TournamentTest < Minitest::Test
     TALLY
     assert_equal expected, Tournament.tally(input)
   end
+
 end
-    
-=end
