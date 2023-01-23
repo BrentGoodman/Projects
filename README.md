@@ -5,17 +5,27 @@
 
 **This Repository supports the various outlined in my [Certificates Repository](https://github.com/BrentGoodman/Certificates)**
 
+<br><br>
+
 ***
+
+<br><br>
 
 <ins>The type of Projects that I have been working on are the following:</ins>
 
+<br><br>
 
-1. [Front-End Web Design](#heading-ids)	
-2. [JavaScript](#heading-ids)	
-3. [Python](#heading-ids)	
+1. **[Front-End Web Design](#heading-ids)**
+2. **[JavaScript](#heading-ids)**
+3. **[Python](#heading-ids)**	
 
+***
+
+<br><br>
 
 <h3 id="front">Front-End Web Design</h3>
+
+***
 
 + HTML
 + CSS
@@ -32,9 +42,11 @@
 | :diamond_shape_with_a_dot_inside: | Building a Magazine | Front-End Web Design | :small_blue_diamond: CSS Grid <br> :small_blue_diamond: HTML <br> :small_blue_diamond: Responsive Design |
 | :diamond_shape_with_a_dot_inside: | Product Landing Page | Front-End Web Design | :small_blue_diamond: CSS Layout <br> :small_blue_diamond: Bootstrap 5 <br> :small_blue_diamond: HTML5 <br> :small_blue_diamond: JavaScript <br> :small_blue_diamond: Responsive Design |
 
-***
+<br><br>
 
 <h3 id="javascript">JavaScript</h3>
+
+***
 
 + JavaScript Website Features
 + Algorithms
@@ -56,10 +68,11 @@
 | :diamond_shape_with_a_dot_inside: | Cutting Ties | JavaScript | :small_blue_diamond: Objects to create complex animations <br> :small_blue_diamond: Appending Shapes <br> :small_blue_diamond: Creating Transitions |
 | :diamond_shape_with_a_dot_inside: | Cutting Ties | JavaScript | :small_blue_diamond: Debbuging <br> :small_blue_diamond: Multiple returns <br> :small_blue_diamond: Helper functions |
 
-
-***
+<br><br>
 
 <h3 id="python">Python</h3>
+
+***
 
 + Python Programming
 + Networking with Python
