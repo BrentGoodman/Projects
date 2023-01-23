@@ -33,7 +33,7 @@
 + Bootstrap 5
 
 |            |      Projects        |       Area        |       Skills       |
-| :--------: | :--------: | :--------: | :--------: |
+| :--------: | :--------: | :--------: | :-------- |
 | :diamond_shape_with_a_dot_inside: | Rothko Painting | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: HTML <br> :small_blue_diamond: Box Model   |
 | :diamond_shape_with_a_dot_inside: | Picasso Painting | Front-End Web Design | :small_blue_diamond: SVG Icons <br> :small_blue_diamond: CSS Positioning <br> :small_blue_diamond: Layers  |
 | :diamond_shape_with_a_dot_inside: | Piano Design | Front-End Web Design | :small_blue_diamond: Responsive Web Design <br> :small_blue_diamond: Media Queries <br> :small_blue_diamond: HTML |
@@ -57,7 +57,7 @@
 + Automation
 
 |            |      Projects        |       Area        |       Skills       |
-| :--------: | :--------: | :--------: | :--------: |
+| :--------: | :--------: | :--------: | :-------- |
 | :diamond_shape_with_a_dot_inside: | Ceasar Cipher | JavaScript | :small_blue_diamond: ES6 <br> :small_blue_diamond: Loops <br> :small_blue_diamond: Advanced Functions <br> :small_blue_diamond: Algorithms|
 | :diamond_shape_with_a_dot_inside: | Cash Register | JavaScript | :small_blue_diamond: ES6 <br> :small_blue_diamond: Loops <br> :small_blue_diamond: Functions <br> :small_blue_diamond: Algorithms |
 | :diamond_shape_with_a_dot_inside: | Palindrome Checker | JavaScript | :small_blue_diamond: ES6 <br> :small_blue_diamond: Regular Expresions <br> :small_blue_diamond: Functions <br> :small_blue_diamond: Algorithms|
@@ -80,7 +80,7 @@
 + Data Analysis with Python
 
 |            |      Projects        |       Area        |       Skills       |
-| :--------: | :--------: | :--------: | :--------: |
+| :--------: | :--------: | :--------: | :-------- |
 | :diamond_shape_with_a_dot_inside: | Mailing Client | Python | :small_blue_diamond: Python 3 <br> :small_blue_diamond: Networking |
 | :diamond_shape_with_a_dot_inside: | TCP Chat Room | Python | :small_blue_diamond: Python 3 <br> :small_blue_diamond: Networking <br> :small_blue_diamond: Servers |
 | :diamond_shape_with_a_dot_inside: | DDoS Script | Python | :small_blue_diamond: Experimental Coding <br> :small_blue_diamond: Python 3 <br> :small_blue_diamond: Infinite Loops |
@@ -97,7 +97,7 @@
 <!-- ***
 
 |            |      Projects        |       Area        |       Skills       |
-| :--------: | :--------: | :--------: | :--------: |
+| :--------: | :--------: | :--------: | :-------- |
 | :diamond_shape_with_a_dot_inside: |  | Back-End Development | :small_blue_diamond: |
 | :diamond_shape_with_a_dot_inside: |  | Back-End Development | :small_blue_diamond: |
 | :diamond_shape_with_a_dot_inside: |  | Back-End Development | :small_blue_diamond: |
@@ -109,7 +109,7 @@
 ***
 
 |            |      Projects        |       Area        |       Skills       |
-| :--------: | :--------: | :--------: | :--------: |
+| :--------: | :--------: | :--------: | :-------- |
 | :diamond_shape_with_a_dot_inside: |  | Go Lang | :small_blue_diamond: |
 | :diamond_shape_with_a_dot_inside: |  |  |  |
 | :diamond_shape_with_a_dot_inside: |  |  |  |
@@ -121,7 +121,7 @@
 ***
 
 |            |      Projects        |       Area        |       Skills       |
-| :--------: | :--------: | :--------: | :--------: |
+| :--------: | :--------: | :--------: | :-------- |
 | :diamond_shape_with_a_dot_inside: |  | Cloud Architecture | :small_blue_diamond: |
 | :diamond_shape_with_a_dot_inside: |  |  |  |
 | :diamond_shape_with_a_dot_inside: |  |  |  |
