@@ -15,9 +15,9 @@
 
 <br><br>
 
-1. **[Front-End Web Design](#heading-ids)**
-2. **[JavaScript](#heading-ids)**
-3. **[Python](#heading-ids)**	
+1. **[Front-End Web Design](#front)**
+2. **[JavaScript](#javascript)**
+3. **[Python](#python)**	
 
 ***
 
@@ -31,6 +31,8 @@
 + CSS
 + JavaScript
 + Bootstrap 5
+
+<br>
 
 |            |      Projects        |       Area        |       Skills       |
 | :--------: | :--------: | :--------: | :-------- |
@@ -56,6 +58,8 @@
 + Animation
 + Automation
 
+<br>
+
 |            |      Projects        |       Area        |       Skills       |
 | :--------: | :--------: | :--------: | :-------- |
 | :diamond_shape_with_a_dot_inside: | Ceasar Cipher | JavaScript | :small_blue_diamond: ES6 <br> :small_blue_diamond: Loops <br> :small_blue_diamond: Advanced Functions <br> :small_blue_diamond: Algorithms|
@@ -78,6 +82,8 @@
 + Networking with Python
 + Machine Learning with Python
 + Data Analysis with Python
+
+<br>
 
 |            |      Projects        |       Area        |       Skills       |
 | :--------: | :--------: | :--------: | :-------- |
