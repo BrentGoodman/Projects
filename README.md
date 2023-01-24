@@ -17,7 +17,9 @@
 
 1. **[Front-End Web Design](#front)**
 2. **[JavaScript](#javascript)**
-3. **[Python](#python)**	
+3. **[Python](#python)**
+4. **[C++](#cpp)**
+5. **[Ruby](#ruby)**
 
 ***
 
@@ -94,9 +96,35 @@
 | :diamond_shape_with_a_dot_inside: | Web Scraper | Python | :small_blue_diamond: Data Analysis <br> :small_blue_diamond: Python 3 |
 | :diamond_shape_with_a_dot_inside: | Python Automation | Python | :small_blue_diamond: Python 3 <br> :small_blue_diamond: Automation |
 | :diamond_shape_with_a_dot_inside: | QR Code Generator | Python | :small_blue_diamond: Python 3 |
-| :diamond_shape_with_a_dot_inside: | Intro to Machine Learning | Python | :small_blue_diamond: Data Exploration <br> :small_blue_diamond: How Models Work <br> :small_blue_diamond: Model Validation <br> :small_blue_diamond: Underfitting and Overfitting <br> :small_blue_diamond: Random Forests|
-| :diamond_shape_with_a_dot_inside: | Data Analysis with <br> Pandas Python Library | Python | :small_blue_diamond: Indexing, Selecting & Assigning <br> :small_blue_diamond: Summary Functions and Maps<br> :small_blue_diamond:  Grouping and Sorting <br> :small_blue_diamond:  Data Types and Missing Values <br> :small_blue_diamond: Renaming and Combining |
+| :diamond_shape_with_a_dot_inside: | Intro to Machine Learning | Python | :small_blue_diamond: Data Exploration <br> :small_blue_diamond: How Models Work <br> :small_blue_diamond: Model Validation <br> :small_blue_diamond: Underfitting & Overfitting <br> :small_blue_diamond: Random Forests|
+| :diamond_shape_with_a_dot_inside: | Data Analysis with <br> Pandas Python Library | Python | :small_blue_diamond: Indexing, Selecting & Assigning <br> :small_blue_diamond: Summary Functions & Maps<br> :small_blue_diamond:  Grouping & Sorting <br> :small_blue_diamond:  Data Types & Missing Values <br> :small_blue_diamond: Renaming & Combining |
 | :diamond_shape_with_a_dot_inside: | Intermediate Machine Learning | Python | :small_blue_diamond: Missing Values <br> :small_blue_diamond: Categorical Variables <br> :small_blue_diamond: Pipelines <br> :small_blue_diamond: Cross-Validation <br> :small_blue_diamond: XGBoost <br> :small_blue_diamond: Data Leakage  |
+
+
+<br><br>
+
+<h3 id="cpp">C++</h3>
+
+***
+
++ Input & Output, Variables & Data Types
++ Conditional Statements
++ Operators
++ Fuctions
++ Object-Oriented Programming (OOPS)
++ Memory Allocation (Dynamic & Static), Macros & Global Variables
++ Arrays & Strings
++ Containers & Algorithms
+
+<br>
+
+|            |      Projects        |       Area        |       Skills       |
+| :--------: | :--------: | :--------: | :-------- |
+| :diamond_shape_with_a_dot_inside: | Character Case Test | C++ | :small_blue_diamond: C++ <br> :small_blue_diamond: Functions <br> :small_blue_diamond: Operators <br> :small_blue_diamond: Input & Output <br> :small_blue_diamond: Regex <br> :small_blue_diamond: Conditional Statements |
+| :diamond_shape_with_a_dot_inside: | Even Number Till N | C++ | :small_blue_diamond: C++ <br> :small_blue_diamond: Functions <br> :small_blue_diamond: Operators <br> :small_blue_diamond: Input & Output <br> :small_blue_diamond: Arrays & Strings <br> :small_blue_diamond: Conditional Statements |
+| :diamond_shape_with_a_dot_inside: | Factorial of a Number | C++ | :small_blue_diamond: C++ <br> :small_blue_diamond: Functions <br> :small_blue_diamond: Operators <br> :small_blue_diamond: Input & Output <br> :small_blue_diamond: Variables <br> :small_blue_diamond: Conditional Statements |
+| :diamond_shape_with_a_dot_inside: | Nth Number of the <br> Fibonacci Sequence | C++ | :small_blue_diamond: C++ <br> :small_blue_diamond: Functions <br> :small_blue_diamond: Operators <br> :small_blue_diamond: Input & Output <br> :small_blue_diamond: Macros <br> :small_blue_diamond: Containers & Algorithms |
+| :diamond_shape_with_a_dot_inside: | Find Power of a Number | C++ | :small_blue_diamond: C++ <br> :small_blue_diamond: Arrays & Strings <br> :small_blue_diamond: Operators <br> :small_blue_diamond: Input & Output <br> :small_blue_diamond: Variables <br> :small_blue_diamond: Conditional Statements |
 
 
 <br><br>
