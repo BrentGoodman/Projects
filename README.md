@@ -112,6 +112,15 @@
 + Operators
 + Fuctions
 + Object-Oriented Programming (OOPS)
+    + Access Modifiers
+    + Class
+    + Object
+    + Encapsulation
+    + Abstraction
+    + Polymorphism
+    + Inheritance
+    + Constructor
+    + Desctructor
 + Memory Allocation (Dynamic & Static), Macros & Global Variables
 + Arrays & Strings
 + Containers & Algorithms
@@ -140,41 +149,70 @@
 | :diamond_shape_with_a_dot_inside: | Tournament Results | Ruby | :small_blue_diamond: Ruby <br> :small_blue_diamond: Functions <br> :small_blue_diamond: Classes <br> :small_blue_diamond: Input and Output <br> :small_blue_diamond: Case's <br> :small_blue_diamond: Formatting |
 
 
-<!-- ***
+<!--
+
+<br><br>
+
+<h3 id="back-end-dev">Back-End Development</h3>
+
+***
+
++ 
++ 
++ 
++ 
++ 
++ 
+
+<br>
 
 |            |      Projects        |       Area        |       Skills       |
 | :--------: | :--------: | :--------: | :-------- |
 | :diamond_shape_with_a_dot_inside: |  | Back-End Development | :small_blue_diamond: |
-| :diamond_shape_with_a_dot_inside: |  | Back-End Development | :small_blue_diamond: |
-| :diamond_shape_with_a_dot_inside: |  | Back-End Development | :small_blue_diamond: |
-| :diamond_shape_with_a_dot_inside: |  | Back-End Development | :small_blue_diamond: |
-| :diamond_shape_with_a_dot_inside: |  | Back-End Development | :small_blue_diamond: |
-| :diamond_shape_with_a_dot_inside: |  | Back-End Development | :small_blue_diamond: |
-| :diamond_shape_with_a_dot_inside: |  | Back-End Development | :small_blue_diamond: |
+
+<br><br>
+
+<h3 id="Go-Lang">Go Lang</h3>
 
 ***
+
++ 
++ 
++ 
++ 
++ 
++ 
+
+<br>
 
 |            |      Projects        |       Area        |       Skills       |
 | :--------: | :--------: | :--------: | :-------- |
 | :diamond_shape_with_a_dot_inside: |  | Go Lang | :small_blue_diamond: |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
+
+
+<br><br>
+
+<h3 id="cloud-architecture">Cloud Architecture</h3>
 
 ***
+
++ 
++ 
++ 
++ 
++ 
++ 
+
+<br>
+
 
 |            |      Projects        |       Area        |       Skills       |
 | :--------: | :--------: | :--------: | :-------- |
 | :diamond_shape_with_a_dot_inside: |  | Cloud Architecture | :small_blue_diamond: |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
-| :diamond_shape_with_a_dot_inside: |  |  |  |
-| :diamond_shape_with_a_dot_inside: |  |  |  | --!>
+
+
+--!>
+
 
 
 
