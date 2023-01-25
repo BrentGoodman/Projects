@@ -13,13 +13,17 @@
 
 <ins>The type of Projects that I have been working on are the following:</ins>
 
-<br><br>
+<br>
+
+<h2 id="content">Table of Content</h2>
 
 1. **[Front-End Web Design](#front)**
 2. **[JavaScript](#javascript)**
 3. **[Python](#python)**
 4. **[C++](#cpp)**
 5. **[Ruby](#ruby)**
+
+<br>
 
 ***
 
@@ -149,9 +153,7 @@
 | :diamond_shape_with_a_dot_inside: | Tournament Results | Ruby | :small_blue_diamond: Ruby <br> :small_blue_diamond: Functions <br> :small_blue_diamond: Classes <br> :small_blue_diamond: Input and Output <br> :small_blue_diamond: Case's <br> :small_blue_diamond: Formatting |
 
 
-<!--
-
-<br><br>
+<!--- <br><br>
 
 <h3 id="back-end-dev">Back-End Development</h3>
 
@@ -208,11 +210,9 @@
 
 |            |      Projects        |       Area        |       Skills       |
 | :--------: | :--------: | :--------: | :-------- |
-| :diamond_shape_with_a_dot_inside: |  | Cloud Architecture | :small_blue_diamond: |
+| :diamond_shape_with_a_dot_inside: |  | Cloud Architecture | :small_blue_diamond: | --->
 
+<br><br>
 
---!>
-
-
-
+> **[:arrow_double_up: Back to Top](#content)**
 
