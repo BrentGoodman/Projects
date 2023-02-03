@@ -16,7 +16,7 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       React.createElement("div", { className: "App" }, 
       React.createElement("header", { className: "sidebar" }, 
       React.createElement("img", {
-        src: "https://raw.githubusercontent.com/BrentGoodman/brentgoodman.github.io/main/assets/img/logos/BrentGoodmanLogoWhite.webp",
+        src: "https://drive.google.com/uc?id=1333mVlqh_91mKrbGR0mKfUFXGDPobzHx",
         alt: "brent goodman logo",
         className: "logo" }), 
 
@@ -93,7 +93,7 @@ Here are my skills:
 
 I look forward to talking with you soon! &#10004; 
 
-![Brent Goodman Logo](https://raw.githubusercontent.com/BrentGoodman/brentgoodman.github.io/main/assets/img/logos/BrentGoodmanLogoWhite.webp)
+![Brent Goodman Logo](https://drive.google.com/uc?id=1333mVlqh_91mKrbGR0mKfUFXGDPobzHx)
 
 
 \`\`\`
