@@ -23,7 +23,9 @@ class MarkdownEditor extends React.Component {
 class MarkdownContainer extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {text: "# Brent Goodman\n## Contract Specialist Manager\n### Aspiring Full Stack Web Developer ###\n---\nManagement-level __contract specialist manager__ with ~~thirteen~~ **13+ years'** experience performing `commercial contract management` and *project management*. :\n* Contract Management\n* Drafting Legal Documents\n* People Management\n* Learn more about me at [BrentGoodman.github.io](https://BrentGoodman.github.io)\n\nMy skills are the following:\n1. Microsoft Excel, Project, SharePoint, Teams, Word\n2. Salesforce\n3. Asana\n4. JIRA (Atlassian)\n5. Adobe Software\n- Acrobat\n- Premiere Pro\n- InDesign\n- Illustrator\n6. Google Suite\n- Docs\n- Sheets\n- Cloud\n- Drive\n- App Script\n7. Programming\n+ Python\n+ HTML\n+ CSS\n+JavaScript\n+ CPP \n\nI look forward to talking with you soon! &#10004;"};
+    this.state = {
+      text: "# Brent Goodman\n## Contract Specialist Manager\n### Aspiring Full Stack Web Developer ###\n---\nManagement-level __contract specialist manager__ with ~~thirteen~~ **13+ years'** experience performing `commercial contract management` and *project management*. :\n* Contract Management\n* Drafting Legal Documents\n* People Management\n* Learn more about me at [BrentGoodman.github.io](https://BrentGoodman.github.io)\n\nMy skills are the following:\n1. Microsoft\n - Microsoft Excel\n - Microsoft Project\n - Microsoft SharePoint\n - Microsoft Teams\n - Microsoft Word\n2. Salesforce\n3. Asana\n4. JIRA (Atlassian)\n5. Adobe Software\n - Acrobat\n - Premiere Pro\n - InDesign\n - Illustrator\n6. Google Suite\n - Google Docs\n - Google Sheets\n - Google Cloud\n - Google Drive\n - Google App Script\n7. Programming\n + Python\n + HTML\n + CSS\n +JavaScript\n + CPP \n\nI look forward to talking with you soon! &#10004; \n\n ![Brent Goodman Logo](https://github.com/BrentGoodman/brentgoodman.github.io/blob/9052f2623ae8abf44a24ed86af6071a20ba086b6/assets/img/logos/BrentGoodmanLogoWhite.webp)"
+    };
     this.handleChange = this.handleChange.bind(this);
   }
   createMarkup() {
@@ -46,7 +48,7 @@ class MarkdownContainer extends React.Component {
 
   }}
 
-  
+
 class App extends React.Component {
   render() {
     return (
