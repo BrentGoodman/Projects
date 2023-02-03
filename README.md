@@ -37,18 +37,23 @@
 + CSS
 + JavaScript
 + Bootstrap 5
++ React.JS
++ Redux.JS
 
 <br>
 
 |            |      Projects        |       Area        |       Skills       |
 | :--------: | :--------: | :--------: | :-------- |
+| :diamond_shape_with_a_dot_inside: | Random Quote Generatro | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: HTML <br> :small_blue_diamond: React.JS + Redux.JS  |
+| :diamond_shape_with_a_dot_inside: | Building a Magazine | Front-End Web Design | :small_blue_diamond: CSS Grid <br> :small_blue_diamond: HTML <br> :small_blue_diamond: Responsive Design |
+| :diamond_shape_with_a_dot_inside: | Product Landing Page | Front-End Web Design | :small_blue_diamond: CSS Layout <br> :small_blue_diamond: Bootstrap 5 <br> :small_blue_diamond: HTML5 <br> :small_blue_diamond: JavaScript <br> :small_blue_diamond: Responsive Design |
+| :diamond_shape_with_a_dot_inside: | City Skyline (Day & Night) | Front-End Web Design | :small_blue_diamond: CSS Variables <br> :small_blue_diamond: Responsive Design <br> :small_blue_diamond: HTML <br> :small_blue_diamond: Media Queries |
 | :diamond_shape_with_a_dot_inside: | Rothko Painting | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: HTML <br> :small_blue_diamond: Box Model   |
 | :diamond_shape_with_a_dot_inside: | Picasso Painting | Front-End Web Design | :small_blue_diamond: SVG Icons <br> :small_blue_diamond: CSS Positioning <br> :small_blue_diamond: Layers  |
 | :diamond_shape_with_a_dot_inside: | Piano Design | Front-End Web Design | :small_blue_diamond: Responsive Web Design <br> :small_blue_diamond: Media Queries <br> :small_blue_diamond: HTML |
 | :diamond_shape_with_a_dot_inside: | Technical Documentation <br> Page | Front-End Web Design | :small_blue_diamond: HTML <br> :small_blue_diamond: CSS <br> :small_blue_diamond: NAV Bars <br> :small_blue_diamond: Responsive Layout |
-| :diamond_shape_with_a_dot_inside: | City Skyline (Day & Night) | Front-End Web Design | :small_blue_diamond: CSS Variables <br> :small_blue_diamond: Responsive Design <br> :small_blue_diamond: HTML <br> :small_blue_diamond: Media Queries |
-| :diamond_shape_with_a_dot_inside: | Building a Magazine | Front-End Web Design | :small_blue_diamond: CSS Grid <br> :small_blue_diamond: HTML <br> :small_blue_diamond: Responsive Design |
-| :diamond_shape_with_a_dot_inside: | Product Landing Page | Front-End Web Design | :small_blue_diamond: CSS Layout <br> :small_blue_diamond: Bootstrap 5 <br> :small_blue_diamond: HTML5 <br> :small_blue_diamond: JavaScript <br> :small_blue_diamond: Responsive Design |
+
+
 
 <br><br>
 
@@ -63,6 +68,8 @@
 + Loops
 + Animation
 + Automation
++ React Library
++ Redux Library
 
 <br>
 
@@ -215,4 +222,5 @@
 <br><br>
 
 > **[:arrow_double_up: Back to Top](#top)**
+
 
