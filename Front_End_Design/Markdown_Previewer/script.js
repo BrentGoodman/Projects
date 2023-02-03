@@ -96,9 +96,9 @@ I look forward to talking with you soon! &#10004;
 ![Brent Goodman Logo](https://raw.githubusercontent.com/BrentGoodman/brentgoodman.github.io/main/assets/img/logos/BrentGoodmanLogoWhite.webp)
 
 
-```                      
-   <p>Made with Love! By Brent Goodman.</p>          
-```
+\`\`\`
+<p>Made with Love! By Brent Goodman.</p>          
+\`\`\`
 
 `;
 
