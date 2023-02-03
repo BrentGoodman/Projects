@@ -16,8 +16,8 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
       React.createElement("div", { className: "App" }, 
       React.createElement("header", { className: "sidebar" }, 
       React.createElement("img", {
-        src: "https://amr-adel.github.io/fcc-markdown-previewer/static/media/logo.da62a73a.svg",
-        alt: "markdown previewer logo",
+        src: "https://raw.githubusercontent.com/BrentGoodman/brentgoodman.github.io/main/assets/img/logos/BrentGoodmanLogoWhite.webp",
+        alt: "brent goodman logo",
         className: "logo" }), 
 
       React.createElement("h1", { className: "brand" }, "Markdown previewer")), 
@@ -93,7 +93,13 @@ Here are my skills:
 
 I look forward to talking with you soon! &#10004; 
 
-![Brent Goodman Logo](https://github.com/BrentGoodman/brentgoodman.github.io/blob/9052f2623ae8abf44a24ed86af6071a20ba086b6/assets/img/logos/BrentGoodmanLogoWhite.webp)"
+![Brent Goodman Logo](https://raw.githubusercontent.com/BrentGoodman/brentgoodman.github.io/main/assets/img/logos/BrentGoodmanLogoWhite.webp)"
+
+
+```                      
+   <p>Made with Love! By Brent Goodman.</p>          
+```
+
 `;
 
 ReactDOM.render( React.createElement(MarkdownPreviewer, null), document.getElementById("root"));
