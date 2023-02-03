@@ -1,7 +1,7 @@
 class MarkdownPreviewer extends React.Component {
   render() {
     return (
-      React.createElement("div", { className: "markdown-previewer" }, 
+      React.createElement("div", { className: "preview" }, 
       React.createElement("h4", null, "\u2705 Markdown previewer"), 
       React.createElement("div", { dangerouslySetInnerHTML: this.props.markup })));
 
@@ -12,7 +12,7 @@ class MarkdownPreviewer extends React.Component {
 class MarkdownEditor extends React.Component {
   render() {
     return (
-      React.createElement("div", { className: "markdown-editor" }, 
+      React.createElement("div", { className: "editor" }, 
       React.createElement("h4", null, "\u270E Markdown editor"), 
       React.createElement("textarea", { onChange: this.props.onChange, value: this.props.value })));
 
