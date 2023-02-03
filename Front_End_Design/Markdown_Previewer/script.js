@@ -93,7 +93,7 @@ Here are my skills:
 
 I look forward to talking with you soon! &#10004; 
 
-![Brent Goodman Logo](https://raw.githubusercontent.com/BrentGoodman/brentgoodman.github.io/main/assets/img/logos/BrentGoodmanLogoWhite.webp)"
+![Brent Goodman Logo](https://raw.githubusercontent.com/BrentGoodman/brentgoodman.github.io/main/assets/img/logos/BrentGoodmanLogoWhite.webp)
 
 
 ```                      
