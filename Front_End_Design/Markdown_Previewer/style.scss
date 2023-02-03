@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
-
 $workspace-color: #373737;
 $workspace-font-color: #ffffff;
 $workspace-border-radius: 4px;
@@ -7,6 +5,8 @@ $editor-label-color: #51b9db;
 $editor-label-color: #51b9db;
 $previewer-label-color: #406570;
 $breakpoint-one: 900px;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 body, div, textarea {
     padding: 0;
