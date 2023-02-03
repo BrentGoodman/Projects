@@ -44,7 +44,8 @@
 
 |            |      Projects        |       Area        |       Skills       |
 | :--------: | :--------: | :--------: | :-------- |
-| :diamond_shape_with_a_dot_inside: | Random Quote Generatro | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: HTML <br> :small_blue_diamond: React.JS + Redux.JS  |
+| :diamond_shape_with_a_dot_inside: | Markdown Previewer and Editor | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: HTML <br> :small_blue_diamond: React.JS  |
+| :diamond_shape_with_a_dot_inside: | Random Quote Generator | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: HTML <br> :small_blue_diamond: React.JS + Redux.JS  |
 | :diamond_shape_with_a_dot_inside: | Building a Magazine | Front-End Web Design | :small_blue_diamond: CSS Grid <br> :small_blue_diamond: HTML <br> :small_blue_diamond: Responsive Design |
 | :diamond_shape_with_a_dot_inside: | Product Landing Page | Front-End Web Design | :small_blue_diamond: CSS Layout <br> :small_blue_diamond: Bootstrap 5 <br> :small_blue_diamond: HTML5 <br> :small_blue_diamond: JavaScript <br> :small_blue_diamond: Responsive Design |
 | :diamond_shape_with_a_dot_inside: | City Skyline (Day & Night) | Front-End Web Design | :small_blue_diamond: CSS Variables <br> :small_blue_diamond: Responsive Design <br> :small_blue_diamond: HTML <br> :small_blue_diamond: Media Queries |
