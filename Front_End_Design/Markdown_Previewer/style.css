@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+body, div, textarea {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  color: darkorange;
+}
+
+body {
+  background-color: #373737;
+}
+
+body, textarea {
+  font-family: "Montserrat", sans-serif;
+  color: #96fdff;
+  font-size: 18px;
+}
+
+.markdown-editor, .markdown-previewer {
+  width: 50%;
+  height: 100vh;
+  padding: 30px;
+  padding-top: 10vh;
+  padding-bottom: 0;
+}
+.markdown-editor h4, .markdown-previewer h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 4px 4px 0 0;
+  margin: 0;
+}
+
+.markdown-editor > textarea, .markdown-previewer > div {
+  border: 1px solid;
+  background-color: #2c344b;
+  padding: 1.5em;
+  padding-top: 1em;
+  display: block;
+  width: 100%;
+  height: 70%;
+}
+
+.markdown-editor {
+  float: left;
+}
+.markdown-editor h4 {
+  background-color: #51b9db;
+}
+.markdown-editor textarea {
+  border-color: #51b9db;
+}
+
+.markdown-previewer {
+  float: right;
+}
+.markdown-previewer h4 {
+  background-color: #406570;
+}
+.markdown-previewer div {
+  overflow: auto;
+  border-color: #406570;
+}
+
+@media screen and (max-width: 900px) {
+  .markdown-editor, .markdown-previewer {
+    float: none;
+    padding-top: 2em;
+    width: 100%;
+  }
+
+  .markdown-editor > textarea, .markdown-previewer > div {
+    height: 90%;
+  }
+}
