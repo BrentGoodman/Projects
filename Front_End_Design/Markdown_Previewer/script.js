@@ -1,62 +1,99 @@
-class MarkdownPreviewer extends React.Component {
-  render() {
-    return (
-      React.createElement("div", { className: "preview" }, 
-      React.createElement("h4", null, "\u2705 Markdown previewer"), 
-      React.createElement("div", { dangerouslySetInnerHTML: this.props.markup })));
+function _defineProperty(obj, key, value) {if (key in obj) {Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true });} else {obj[key] = value;}return obj;}class MarkdownPreviewer extends React.Component {constructor(...args) {super(...args);_defineProperty(this, "state",
+    {
+      rawInput: placeholder });}
 
 
-  }}
-
-
-class MarkdownEditor extends React.Component {
-  render() {
-    return (
-      React.createElement("div", { className: "editor" }, 
-      React.createElement("h4", null, "\u270E Markdown editor"), 
-      React.createElement("textarea", { onChange: this.props.onChange, value: this.props.value })));
-
-
-  }}
-
-
-class MarkdownContainer extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: "# Brent Goodman\n## Contract Specialist Manager\n### Aspiring Full Stack Web Developer ###\n---\nManagement-level __contract specialist manager__ with ~~thirteen~~ **13+ years'** experience performing `commercial contract management` and *project management*. :\n* Contract Management\n* Drafting Legal Documents\n* People Management\n* Learn more about me at [BrentGoodman.github.io](https://BrentGoodman.github.io)\n\nMy skills are the following:\n1. Microsoft\n - Microsoft Excel\n - Microsoft Project\n - Microsoft SharePoint\n - Microsoft Teams\n - Microsoft Word\n2. Salesforce\n3. Asana\n4. JIRA (Atlassian)\n5. Adobe Software\n - Acrobat\n - Premiere Pro\n - InDesign\n - Illustrator\n6. Google Suite\n - Google Docs\n - Google Sheets\n - Google Cloud\n - Google Drive\n - Google App Script\n7. Programming\n + Python\n + HTML\n + CSS\n +JavaScript\n + CPP \n\nI look forward to talking with you soon! &#10004; \n\n ![Brent Goodman Logo](https://github.com/BrentGoodman/brentgoodman.github.io/blob/9052f2623ae8abf44a24ed86af6071a20ba086b6/assets/img/logos/BrentGoodmanLogoWhite.webp)"
-    };
-    this.handleChange = this.handleChange.bind(this);
-  }
-  createMarkup() {
-    var options = { sanitize: true };
-    return { __html: marked(this.state.text, options) };
-  }
-
-  handleChange(e) {
-    this.setState({
-      text: e.target.value });
-
+  onChange(raw) {
+    this.setState({ rawInput: raw });
   }
 
   render() {
+    window.marked.setOptions({
+      breaks: true });
+
+
     return (
-      React.createElement("div", null, 
-      React.createElement(MarkdownEditor, { onChange: this.handleChange, value: this.state.text }), 
-      React.createElement(MarkdownPreviewer, { markup: this.createMarkup() })));
+      React.createElement("div", { className: "App" }, 
+      React.createElement("header", { className: "sidebar" }, 
+      React.createElement("img", {
+        src: "https://amr-adel.github.io/fcc-markdown-previewer/static/media/logo.da62a73a.svg",
+        alt: "markdown previewer logo",
+        className: "logo" }), 
+
+      React.createElement("h1", { className: "brand" }, "Markdown previewer")), 
+
+
+      React.createElement("div", { className: "container" }, 
+      React.createElement("h2", { className: "label" }, "editor"), 
+      React.createElement("textarea", {
+        name: "editor",
+        id: "editor",
+        value: this.state.rawInput,
+        onChange: e => this.onChange(e.target.value) })), 
+
+
+
+      React.createElement("article", { className: "container" }, 
+      React.createElement("h2", { className: "label" }, "preview"), 
+      React.createElement("div", {
+        className: "preview",
+        id: "preview",
+        dangerouslySetInnerHTML: {
+          __html: window.marked(this.state.rawInput) } }))));
+
+
+
 
 
   }}
 
 
-class App extends React.Component {
-  render() {
-    return (
-      React.createElement(MarkdownContainer, null));
+const placeholder = `# Markdown Previewer
 
-  }}
+# Brent Goodman
 
+## Contract Specialist Manager
 
-ReactDOM.render( 
-React.createElement(App, null),
-document.getElementById('app'));
+### Aspiring Full Stack Web Developer ###
+---
+Management-level __contract specialist manager__ with ~~thirteen~~ **13+ years'** experience performing "commercial contract management" and *project management*. :
+* Contract Management
+* Drafting Legal Documents
+* People Management
+* Learn more about me at [BrentGoodman.github.io](https://BrentGoodman.github.io)
+
+Here are my skills:
+
+1. Microsoft
+ - Microsoft Excel
+ - Microsoft Project
+ - Microsoft SharePoint
+ - Microsoft Teams
+ - Microsoft Word
+2. Salesforce
+3. Asana
+4. JIRA (Atlassian)
+5. Adobe Software
+ - Acrobat
+ - Premiere Pro
+ - InDesign
+ - Illustrator
+6. Google Suite
+ - Google Docs
+ - Google Sheets
+ - Google Cloud
+ - Google Drive
+ - Google App Script
+7. Programming
+ + Python
+ + HTML
+ + CSS
+ +JavaScript
+ + CPP 
+
+I look forward to talking with you soon! &#10004; 
+
+![Brent Goodman Logo](https://github.com/BrentGoodman/brentgoodman.github.io/blob/9052f2623ae8abf44a24ed86af6071a20ba086b6/assets/img/logos/BrentGoodmanLogoWhite.webp)"
+`;
+
+ReactDOM.render( React.createElement(MarkdownPreviewer, null), document.getElementById("root"));
