@@ -48,7 +48,9 @@ function _defineProperty(obj, key, value) {if (key in obj) {Object.definePropert
   }}
 
 
-const placeholder = `# Markdown Previewer
+const placeholder = `
+
+# Markdown Previewer
 
 # Brent Goodman
 
@@ -56,7 +58,7 @@ const placeholder = `# Markdown Previewer
 
 ### Aspiring Full Stack Web Developer ###
 ---
-Management-level __contract specialist manager__ with ~~thirteen~~ **13+ years'** experience performing "commercial contract management" and *project management*. :
+Management-level __contract specialist manager__ with ~~thirteen~~ **13+ years'** experience performing \`commercial contract management\` and *project management*. :
 * Contract Management
 * Drafting Legal Documents
 * People Management
@@ -64,41 +66,41 @@ Management-level __contract specialist manager__ with ~~thirteen~~ **13+ years'*
 
 Here are my skills:
 
-1. Microsoft
- - Microsoft Excel
- - Microsoft Project
- - Microsoft SharePoint
- - Microsoft Teams
- - Microsoft Word
-2. Salesforce
-3. Asana
-4. JIRA (Atlassian)
-5. Adobe Software
- - Acrobat
- - Premiere Pro
- - InDesign
- - Illustrator
-6. Google Suite
- - Google Docs
- - Google Sheets
- - Google Cloud
- - Google Drive
- - Google App Script
-7. Programming
- + Python
- + HTML
- + CSS
- +JavaScript
- + CPP 
+> 1. \`Microsoft\`
+>  - Microsoft Excel
+>  - Microsoft Project
+>  - Microsoft SharePoint
+>  - Microsoft Teams
+>  - Microsoft Word
+> 2. \`Salesforce\`
+> 3. \`Asana\`
+> 4. \`JIRA (Atlassian)\`
+> 5. \`Adobe Software\`
+>  - Acrobat
+>  - Premiere Pro
+>  - InDesign
+>  - Illustrator
+> 6. \`Google Suite\`
+>  - Google Docs
+>  - Google Sheets
+>  - Google Cloud
+>  - Google Drive
+>  - Google App Script
+> 7. \`Programming\`
+>  + Python
+>  + HTML
+>  + CSS
+>  + JavaScript
+>  + CPP 
 
 I look forward to talking with you soon! &#10004; 
 
-![Brent Goodman Logo](https://drive.google.com/uc?id=1333mVlqh_91mKrbGR0mKfUFXGDPobzHx)
+> ![Brent Goodman Logo](https://drive.google.com/uc?id=1333mVlqh_91mKrbGR0mKfUFXGDPobzHx)
 
 
-\`\`\`
-<p>Made with Love! By Brent Goodman.</p>          
-\`\`\`
+> \`\`\`
+> <p>Made with Love! By Brent Goodman.</p>          
+> \`\`\`
 
 `;
 
