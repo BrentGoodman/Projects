@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+body {
+  height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background: #373737;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-wrapper {
+  width: 75vw;
+  min-width: 300px;
+  padding: 40px;
+  
+  border: 12px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to left, #51b9db, #406570);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote-box {
+  width: 100%;
+  padding: 30px;
+  
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, #51b9db, #406570);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#author {
+  text-align: right;
+  font-size: 1rem;
+  margin: 15px 10px 10px;
+}
+
+#author::before {
+  content: '\2014\0020'
+}
+
+#text {
+  font-size: 1.7rem;
+}
+
+.card-bottom {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none
+}
+
+#icon {
+  background-color: #51b9db;
+  border-radius: 50%;
+  cursor: crosshair;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 1s;
+}
+
+#icon:hover {
+  transform: translateY(-3px);
+}
+
+.fa-twitter {
+  color: #373737;
+}
+
+#icon:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 3px 5px 5px rgb(0 0 0 / 12%), 0 3px 5px rgb(0 0 0 / 24%);
+}
+
+button {
+    padding: 8px 12px;
+    background-color: #51b9db;
+    color: #373737;
+    border-radius: 4px;
+    font-size: 16px;
+    border: 1px solid #51b9db;
+    font-weight: 600;
+    height: 40px;
+  }
+  
+  button:hover {
+    cursor: crosshair;
+    opacity: 0.9;
+  }
+
+@media screen and (max-width: 767px) {
+  .quote-wrapper {
+    min-width: 300px;
+    height: auto;
+    border-width: 8px;
+  } 
+  
+  #quote-box {
+    min-width: 220px;
+    height: auto;
+    padding: 20px;
+  }
+  
+  #text {
+    font-size: 1rem;
+  }
+  
+  #author {
+    font-size: 0.8rem;
+  }
+  
+  button {
+    padding: 8px 12px;
+    font-size: 12px;
+    height: 30px;
+  }
+  
+  #icon {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  } 
+}
