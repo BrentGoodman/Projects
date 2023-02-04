@@ -1,169 +1,258 @@
-const buttons = document.querySelectorAll("button");
-const currCalc = document.querySelector("#calculation");
-const currInput = document.querySelector("#input");
+const keyPadObject = {
+  clear: "C",
+  negPos: "+/-",
+  percentage: "%",
+  divide: "/",
+  seven: "7",
+  eight: "8",
+  nine: "9",
+  multiply: "*",
+  four: "4",
+  five: "5",
+  six: "6",
+  subtract: "-",
+  one: "1",
+  two: "2",
+  three: "3",
+  add: "+",
+  decimal: ".",
+  zero: "0",
+  equals: "=" };
 
-const checkRE = /(\d|\))$/;
-const re1 = /(0+)$/g;
-const re2 = /\.$/;
-let calc = [];
-let input = [];
-let res;
-let intRes = false;
-let disCalc = [];
-let disResult;
-let str;
+let mapKeys = Object.keys(keyPadObject);
 
-function onNumber(el) {
-  if (
-    ((el === "0" && (input[0] !== "0" || input.includes("."))) || el !== "0") &&
-    input.length < 20
-  ) {
-    input[0] === "0" && !input.includes(".") && el !== "0"
-      ? (input = [])
-      : input;
-    input.push(el);
-    currInput.innerHTML = `${input.join("")}`;
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      output: "0",
+      result: "",
+      input: { value: 0, name: "" },
+      numbers: [],
+      operators: [],
+      upcomingIsNegative: false };
+
+    this.componentDidMount = this.componentDidMount.bind(this);
+    this.componentWillUnmount = this.componentWillUnmount.bind(this);
+    this.keyboardPress = this.keyboardPress.bind(this);
+    this.handleClick = this.handleClick.bind(this);
+    this.clearDisplay = this.clearDisplay.bind(this);
+    this.controller = this.controller.bind(this);
+    this.cleanInput = this.cleanInput.bind(this);
+    this.calculate = this.calculate.bind(this);
   }
-}
 
-function onClear(el) {
-  if (el === "c") {
-    calc = [];
-    input = [];
-    intRes = false;
-    res = undefined;
-    displayCalculation(calc, false);
-    currInput.innerHTML = "";
-  } else if (el === "ce") {
-    input = [];
-    currInput.innerHTML = "";
-  } else if (el === "del" && input.length > 0) {
-    input.splice(-1);
-    currInput.innerHTML = `${input.join("")}`;
+  componentDidMount() {
+    document.addEventListener('keydown', this.keyboardPress);
   }
-}
 
-function onNeg() {
-  if (input.length !== 0 && eval(input.join("")) !== 0) {
-    let negative;
-    input[0] === "-" ? (negative = true) : (negative = false);
-    if ((!negative && input.length < 20) || negative) {
-      negative ? input.shift() : input.unshift("-");
-      currInput.innerHTML = `${input.join("")}`;
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.keyboardPress);
+  }
+
+  keyboardPress(e) {
+    let value;
+    let name;
+    let expectedValues = Object.values(keyPadObject);
+    let index = expectedValues.findIndex(x => x == e.key);
+
+    if (index >= 0) {
+      value = e.key;
+      name = mapKeys[index];
+    } else {
+      let defaults = {
+        "Enter": () => {value = "=";name = "equals";},
+        ",": () => {value = ".";name = "decimal";},
+        "default": () => {value = "C";name = "clear";} };
+
+      defaults[e.key] ? defaults[e.key]() : defaults["default"]();
+    }
+
+    let el = document.getElementById(name);
+    el.classList.toggle("hover");
+
+    this.controller(value, name);
+
+    setTimeout(function () {
+      el.classList.toggle("hover");
+    }, 150);
+  }
+
+  handleClick(e) {
+    let value = e.target.getAttribute("dataId");
+    let name = e.target.id;
+
+    this.controller(value, name);
+  }
+
+  controller(value, name) {
+    let input = { value: value, name: name };
+    let output = this.state.output;
+
+    if (input.name == "clear") {
+      this.clearDisplay();
+      return;
+    }
+
+    if (input.value === "0" && output === "0") {
+      return;
+    }
+    if (output === "0") {
+      output = input.value;
+    } else {
+      output += input.value;
+    }
+
+    let updatedValues = this.cleanInput(output, input.value);
+
+    if (updatedValues.numbersArr.length > 1) {
+      let result = this.calculate(
+      updatedValues.numbersArr, updatedValues.operatorsArr);
+
+      this.setState({
+        result: result });
+
+    }
+
+    if (input.name == "equals") {
+      let result = this.calculate(updatedValues.numbersArr, updatedValues.operatorsArr);
+      this.setState({
+        output: result,
+        numbers: [result],
+        result: "",
+        operators: [],
+        upcomingIsNegative: false });
+
+
+    } else {
+      this.setState({
+        output: updatedValues.displayStr,
+        numbers: updatedValues.numbersArr,
+        operators: updatedValues.operatorsArr,
+        upcomingIsNegative: updatedValues.upcomingIsNegative });
+
     }
   }
-}
 
-function onDot() {
-  if (!input.includes(".") && input.length < 20) {
-    input.length > 0 ? input.push(".") : input.push("0", ".");
-    currInput.innerHTML = `${input.join("")}`;
-  }
-}
+  cleanInput(output, input) {
+    let numbersArr = [...this.state.numbers];
+    let operatorsArr = [...this.state.operators];
+    let upcomingIsNegative = this.state.upcomingIsNegative;
+    let displayStr = output;
+    let prevChar = output[output.length - 2];
 
-function onOperator(operator) {
-  input.join("").includes(".") && re1.test(input.join(""))
-    ? (input = input
-        .join("")
-        .replace(re1, "")
-        .replace(re2, "")
-        .split(""))
-    : input;
-  if (checkRE.test(input)) {
-    eval(input.join("")) < 0
-      ? calc.push(`(${input.join("")})`)
-      : calc.push(`${input.join("")}`);
-    input = [];
-    calc.push(operator);
-    displayCalculation(calc, false);
-    currInput.innerHTML = `${input.join("")}`;
-  }
-}
+    if (!!~input.search(/[0-9]/)) {
+      if (upcomingIsNegative) {
+        numbersArr.push(`-${input}`);
 
-function onEqual() {
-  input.join("").includes(".") && re1.test(input.join(""))
-    ? input = input
-        .join("")
-        .replace(re1, "")
-        .replace(re2, "")
-        .split("")
-    : input;
-  if (checkRE.test(input)) {
-    eval(input.join("")) < 0
-      ? calc.push(`(${input.join("")})`)
-      : calc.push(`${input.join("")}`);
-    input = [];
-    if (checkRE.test(calc)) {
-      res = eval(calc.join(""));
-      displayCalculation(calc, true);
-      displayResult(res);
+      } else if (prevChar && !!~prevChar.search(/[0-9, .]/)) {
+        numbersArr[numbersArr.length - 1] += input;
+
+      } else {
+        numbersArr.push(input);
+      }
+
+    } else if (input === ".") {
+      let otherDots = numbersArr[numbersArr.length - 1].match(/[.]/g);
+      if (!otherDots) {
+        numbersArr[numbersArr.length - 1] += input;
+      } else {
+        removeLastOfDisplayStr(prevChar);
+      }
+
+    } else if (prevChar && !!~input.search(/[-, +, *, /]/)) {
+
+      if (!!~prevChar.search(/[-, +, *, /]/)) {
+        if (input === "-") {
+          upcomingIsNegative = true;
+
+        } else {
+          if (upcomingIsNegative) {
+            upcomingIsNegative = false;
+            removeLastOfDisplayStr(input);
+          }
+          removeLastOfDisplayStr(input);
+          operatorsArr[operatorsArr.length - 1] = input;
+        }
+
+      } else if (prevChar.match(/[.]/g)) {
+        removeLastOfDisplayStr(input);
+        numbersArr[numbersArr.length - 1] = numbersArr[numbersArr.length - 1].slice(0, -1);
+
+      } else {
+        operatorsArr.push(input);
+      }
+
     }
-  }
-}
 
-function followUp(withIntRes) {
-  if (withIntRes) {
-    input = res.toString().split("");
-  }
-  calc = [];
-  res = undefined;
-  intRes = undefined;
-  currCalc.innerHTML = `${calc}`;
-}
-
-function displayResult(res) {
-  if (res > 99999999999999999999 || res < -9999999999999999999) {
-    disResult = "error";
-    calc = [];
-    input = [];
-    res = [];
-    intRes = false;
-    displayCalculation([], false);
-  } else {
-    disResult = res;
-    intRes = true;
-  }
-  currInput.innerHTML = `${disResult}`;
-}
-
-function displayCalculation(calcArr, final) {
-  final ? calcArr.push("=") : calcArr;
-  str = calcArr.join("");
-  if (str.length > 30) {
-    str = str.substr(-29);
-    disCalc = `…${str}`;
-  } else {
-    disCalc = str;
-  }
-  currCalc.innerHTML = disCalc;
-}
-
-function calculator() {
-  if (this.className === "number") {
-    if (intRes) {
-      followUp(false);
+    function removeLastOfDisplayStr(replacer) {
+      let index = displayStr.length - 2;
+      displayStr = displayStr.substr(0, index) + replacer + displayStr.substr(index + 2);
     }
-    onNumber(this.id);
-  } else if (this.className === "clear") {
-    onClear(this.id);
-  } else if (this.id === "negative") {
-    if (intRes) {
-      followUp(true);
-    }
-    onNeg();
-  } else if (this.className === "dot") {
-    if (intRes) {
-      followUp(false);
-    }
-    onDot();
-  } else if (this.className === "operator") {
-    if (intRes) {
-      followUp(true);
-    }
-    onOperator(this.id);
-  } else if (this.className === "equal") {
-    onEqual();
-  }
-}
 
-buttons.forEach(button => button.addEventListener("click", calculator));
+    return { displayStr, numbersArr, operatorsArr, upcomingIsNegative };
+  }
+
+  calculate(numbers, operators) {
+
+    let calculation = {
+      "+": (x, y) => x + y,
+      "-": (x, y) => x - y,
+      "/": (x, y) => x / y,
+      "*": (x, y) => x * y };
+
+
+    function reducer(total, value, index, array) {
+      let operator = operators[index - 1];
+      let calc = calculation[operator](parseFloat(total), parseFloat(value));
+      return calc;
+    }
+
+    return numbers.reduce(reducer);
+  }
+
+  clearDisplay() {
+    this.setState({
+      output: "0",
+      result: "",
+      numbers: [],
+      operators: [],
+      upcomingIsNegative: false });
+
+  }
+
+  render() {
+    return(
+      React.createElement("div", { id: "generalContainer" },
+      React.createElement("div", { id: "title" },
+      React.createElement("h5", null, "Javascript Calculator"),
+      React.createElement("small", null, "Designed by Brent Goodman")),
+
+
+      React.createElement("div", { id: "calcContainer" },
+      React.createElement("div", { id: "displayContainer" },
+      React.createElement("div", { id: "display" }, this.state.output),
+      React.createElement("div", { id: "display2" }, this.state.result)),
+
+      React.createElement("div", { id: "padContainer" },
+
+      mapKeys.map(x => {
+        let value = keyPadObject[x];
+        let classNames = !!~value.search(/[-, +, *, /, %]/) ? "padKey operator" : "padKey";
+        return(
+          React.createElement("div", { key: "id-" + x, id: x,
+            dataId: value,
+            className: classNames,
+            onClick: this.handleClick }, value));
+
+      }))),
+
+
+    ));
+
+
+
+  }}
+
+
+ReactDOM.render(React.createElement(App, null), document.getElementById('root'));
