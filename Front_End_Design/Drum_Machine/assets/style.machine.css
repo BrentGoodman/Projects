@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Sacramento&display=swap');
+
+* {
+  font-family: "Alfa Slab One", cursive;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#banner-title {
+  text-align: center;
+  color: white;
+  margin-top: 80px;
+  padding: 0px;
+}
+
+#main-title {
+  font-size: 45px;
+  line-height: 1;
+  text-shadow: 0 0 40px #260729, 0 0 50px #260729;
+}
+
+#sub-title {
+  margin-top: -45px;
+  font-family: "Sacramento", cursive;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 1;
+  color: #e68600;
+}
+
+#drum-machine {
+  display: grid;
+  grid-row: auto auto;
+  width: 280px;
+  margin: 10px auto 0px auto;
+  padding: 30px;
+  box-shadow: 0px 0px 30px 20px rgba(8, 76, 80, 0.8);
+  border-radius: 10px;
+  background-color: rgba(6, 41, 39, 0.8);
+}
+
+#display {
+  margin: -20px 0px 20px 0px;
+  text-align: center;
+  vertical-align: top;
+  color: #fff;
+  font-size: 26px;
+}
+
+.display {
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #42adb9, 0 0 50px #42adb9, 0 0 60px #42adb9, 0 0 70px #42adb9, 0 0 80px #42adb9;
+}
+
+.display-active {
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #2afe66, 0 0 50px #2afe66, 0 0 60px #2afe66, 0 0 70px #2afe66, 0 0 80px #2afe66;
+}
+
+#pad-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px 20px;
+}
+
+.drum-pad {
+  width: 80px;
+  height: 80px;
+  margin: auto;
+  color: #fff;
+  font-size: 25px;
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #42adb9, 0 0 50px #42adb9, 0 0 60px #42adb9, 0 0 70px #42adb9, 0 0 80px #42adb9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0.5px solid #fff;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 10px 2px white, inset 0px 0px 20px 2px #42adb9, inset 0px 0px 30px 3px #42adb9, 0px 0px 10px 2px white, 0px 0px 20px 3px #42adb9, 0px 0px 30px 3px #42adb9;
+}
+.drum-pad:hover {
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0013e6, 0 0 50px #0013e6, 0 0 60px #0013e6, 0 0 70px #0013e6, 0 0 80px #0013e6;
+  box-shadow: inset 0px 0px 10px 2px white, inset 0px 0px 20px 2px #0013e6, inset 0px 0px 30px 3px #0013e6, 0px 0px 10px 2px white, 0px 0px 20px 3px #0013e6, 0px 0px 30px 3px #0013e6;
+}
+.drum-pad:focus {
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0013e6, 0 0 50px #0013e6, 0 0 60px #0013e6, 0 0 70px #0013e6, 0 0 80px #0013e6;
+  box-shadow: inset 0px 0px 10px 2px white, inset 0px 0px 20px 2px #0013e6, inset 0px 0px 30px 3px #0013e6, 0px 0px 10px 2px white, 0px 0px 20px 3px #0013e6, 0px 0px 30px 3px #0013e6;
+  outline: none;
+}
+
+.activate {
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #2afe66, 0 0 50px #2afe66, 0 0 60px #2afe66, 0 0 70px #2afe66, 0 0 80px #2afe66;
+  box-shadow: inset 0px 0px 10px 2px white, inset 0px 0px 20px 2px #2afe66, inset 0px 0px 30px 3px #2afe66, 0px 0px 10px 2px white, 0px 0px 20px 3px #2afe66, 0px 0px 30px 3px #2afe66;
+}
+.activate:hover {
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #2afe66, 0 0 50px #2afe66, 0 0 60px #2afe66, 0 0 70px #2afe66, 0 0 80px #2afe66;
+  box-shadow: inset 0px 0px 10px 2px white, inset 0px 0px 20px 2px #2afe66, inset 0px 0px 30px 3px #2afe66, 0px 0px 10px 2px white, 0px 0px 20px 3px #2afe66, 0px 0px 30px 3px #2afe66;
+}
+.activate:focus {
+  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #2afe66, 0 0 50px #2afe66, 0 0 60px #2afe66, 0 0 70px #2afe66, 0 0 80px #2afe66;
+  box-shadow: inset 0px 0px 10px 2px white, inset 0px 0px 20px 2px #2afe66, inset 0px 0px 30px 3px #2afe66, 0px 0px 10px 2px white, 0px 0px 20px 3px #2afe66, 0px 0px 30px 3px #2afe66;
+  outline: none;
+}
+
+footer {
+  margin: auto;
+  margin-top: 40px;
+  width: 80%;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 50px #260729, 0 0 60px #260729;
+}
+
+footer a .link:hover {
+  color: #e68600;
+  text-shadow: 0 0 50px #260729, 0 0 60px #260729;
+}
