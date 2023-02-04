@@ -110,6 +110,24 @@ button.big i {
   font-weight: bold;
 }
 
+button.big, button.big i {
+    transition: all 1s ease-in;
+}
+
+button.big:hover, button.big:hover i {
+    color: rgb(80, 240, 255);
+    cursor: pointer;
+}
+
+.settings-btn i {
+    transition: all 1s ease-in;
+}
+
+.settings-btn:hover i {
+    color: rgb(80, 240, 255);
+    cursor: pointer;
+}
+
 input {
   background-color: transparent;
   color: var(--text-color1);
@@ -374,7 +392,8 @@ input[type="number"] {
 }
 
 .settings-button:hover, .settings-button:hover i {
-    color: rgb(80, 240, 255);
+    color: rgb(115, 255, 80);
+    cursor: pointer;
 }
 
 /* Animations and status changes*/
@@ -395,12 +414,14 @@ input[type="number"] {
   color: #fff;
 }
 
-.reset-btn, .reset-btn:hover i {
+.reset-btn, .reset-btn i {
+    color: var(--red-2);
     transition: all 1s ease-in;
 }
 
 .reset-btn:hover, .reset-btn:hover i {
     color: rgb(80, 240, 255);
+    cursor: pointer;
 }
 
 .session-shadow {
