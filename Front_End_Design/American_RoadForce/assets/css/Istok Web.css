@@ -1,0 +1,35 @@
+@font-face {
+	font-family: 'Istok Web';
+	src: url(../../assets/fonts/IstokWeb-Regular.woff2) format('woff2'),
+	url(../../assets/fonts/IstokWeb-Regular.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Istok Web';
+	src: url(../../assets/fonts/IstokWeb-Italic.woff2) format('woff2'),
+	url(../../assets/fonts/IstokWeb-Italic.woff) format('woff');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Istok Web';
+	src: url(../../assets/fonts/IstokWeb-Bold.woff2) format('woff2'),
+	url(../../assets/fonts/IstokWeb-Bold.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Istok Web';
+	src: url(../../assets/fonts/IstokWeb-BoldItalic.woff2) format('woff2'),
+	url(../../assets/fonts/IstokWeb-BoldItalic.woff) format('woff');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}

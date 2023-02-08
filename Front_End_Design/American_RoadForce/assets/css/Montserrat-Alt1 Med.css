@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Montserrat-Alt1 Med';
+	src: url(../../assets/fonts/MontserratAlt1-Medium.woff2) format('woff2'),
+	url(../../assets/fonts/MontserratAlt1-Medium.woff) format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}

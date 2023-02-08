@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Montserrat-Alt1 ExtBd';
+	src: url(../../assets/fonts/MontserratAlt1-ExtraBold.woff2) format('woff2'),
+	url(../../assets/fonts/MontserratAlt1-ExtraBold.woff) format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}

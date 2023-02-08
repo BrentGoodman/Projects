@@ -1,0 +1,8 @@
+.fit-cover {
+  object-fit: contain;
+}
+
+#lift_kit_jeep {
+  object-fit: cover;
+}
+
