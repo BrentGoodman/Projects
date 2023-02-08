@@ -6,3 +6,12 @@
   object-fit: cover;
 }
 
+fit-cover {
+  object-fit: cover;
+}
+
+.fit-cover-projects {
+  object-fit: cover;
+  height: 270px;
+}
+
