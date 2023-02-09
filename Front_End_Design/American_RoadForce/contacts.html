@@ -41,7 +41,7 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md sticky-top py-3" id="mainNav">
-        <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon" style="background: #ebe8e0;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-speedometer" style="color: #d01110;">
+        <div class="container-fluid"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon" style="background: #ebe8e0;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-speedometer" style="color: #d01110;">
                         <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"></path>
                         <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"></path>
                     </svg></span><span style="font-family: Gravicon;">American RoadForce</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -82,13 +82,154 @@
                                 <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-2"><label class="form-check-label" for="formCheck-2" style="font-family: 'Istok Web', sans-serif;font-size: 20px;">Tires / Wheels&nbsp;&nbsp;</label></div>
                                 <div class="form-check"><input class="form-check-input" type="checkbox" id="formCheck-3"><label class="form-check-label" for="formCheck-3" style="font-family: 'Istok Web', sans-serif;font-size: 20px;">Alignment&nbsp;&nbsp;</label></div>
                             </div>
+                            <div style="margin-bottom: 16px;"><select class="form-select" name="Vehicle-Manufacturer-List">
+    <optgroup label="Vehicle Manufacturer">
+      <option value="No-Selection">Make of your Vehicle</option>
+      <option value="Abarth">Abarth</option>
+      <option value="AC">AC</option>
+      <option value="Acura">Acura</option>
+      <option value="AIXAM">AIXAM</option>
+      <option value="Alfa-Romeo">Alfa Romeo</option>
+      <option value="Alpine">Alpine</option>
+      <option value="Arash">Arash</option>
+      <option value="Ariel">Ariel</option>
+      <option value="Artega">Artega</option>
+      <option value="Ascari">Ascari</option>
+      <option value="Aston-Martin">Aston Martin</option>
+      <option value="Audi">Audi</option>
+      <option value="AvtoVAZ">AvtoVAZ</option>
+      <option value="BAIC">BAIC</option>
+      <option value="Bentley">Bentley</option>
+      <option value="BMW">BMW</option>
+      <option value="Borgward">Borgward</option>
+      <option value="Brilliance">Brilliance</option>
+      <option value="Bristol">Bristol</option>
+      <option value="Bufori">Bufori</option>
+      <option value="Bugatti">Bugatti</option>
+      <option value="Buick">Buick</option>
+      <option value="Byton">Byton</option>
+      <option value="Cadillac">Cadillac</option>
+      <option value="Caterham">Caterham</option>
+      <option value="Changan">Changan</option>
+      <option value="Changhe">Changhe</option>
+      <option value="Chery">Chery</option>
+      <option value="Chevrolet">Chevrolet</option>
+      <option value="Chrysler">Chrysler</option>
+      <option value="Citroen">Citroen</option>
+      <option value="Coda">Coda</option>
+      <option value="CTandT">CT&amp;T</option>
+      <option value="Dacia">Dacia</option>
+      <option value="Daewoo">Daewoo</option>
+      <option value="DAF">DAF</option>
+      <option value="Daihatsu">Daihatsu</option>
+      <option value="Datsun">Datsun</option>
+      <option value="Dodge">Dodge</option>
+      <option value="Donkervoort">Donkervoort</option>
+      <option value="DS">DS</option>
+      <option value="Ferrari">Ferrari</option>
+      <option value="Fiat">Fiat</option>
+      <option value="Fisker">Fisker</option>
+      <option value="Force-Motors">Force Motors</option>
+      <option value="Ford">Ford</option>
+      <option value="Foton">Foton</option>
+      <option value="GAZ">GAZ</option>
+      <option value="Geely">Geely</option>
+      <option value="Genesis">Genesis</option>
+      <option value="Ginetta">Ginetta</option>
+      <option value="GMC">GMC</option>
+      <option value="Great Wall">Great Wall</option>
+      <option value="Haima">Haima</option>
+      <option value="Hino">Hino</option>
+      <option value="Holden">Holden</option>
+      <option value="Honda">Honda</option>
+      <option value="Hyundai">Hyundai</option>
+      <option value="Iconic">Iconic</option>
+      <option value="Infiniti">Infiniti</option>
+      <option value="Isuzu">Isuzu</option>
+      <option value="JAC">JAC</option>
+      <option value="Jaguar">Jaguar</option>
+      <option value="Jeep">Jeep</option>
+      <option value="JMC">JMC</option>
+      <option value="Kia">Kia</option>
+      <option value="Koenigsegg">Koenigsegg</option>
+      <option value="Lamborghini">Lamborghini</option>
+      <option value="Lancia">Lancia</option>
+      <option value="Land Rover">Land Rover</option>
+      <option value="Landwind">Landwind</option>
+      <option value="Lexus">Lexus</option>
+      <option value="Lifan">Lifan</option>
+      <option value="Lincoln">Lincoln</option>
+      <option value="Lotus">Lotus</option>
+      <option value="Luxgen">Luxgen</option>
+      <option value="Magna-Steyr">Magna Steyr</option>
+      <option value="Mahindra">Mahindra</option>
+      <option value="Maserati">Maserati</option>
+      <option value="Maxus">Maxus</option>
+      <option value="Maybach">Maybach</option>
+      <option value="Mazda">Mazda</option>
+      <option value="Mazzanti">Mazzanti</option>
+      <option value="McLaren">McLaren</option>
+      <option value="Mercedes-Benz">Mercedes-Benz</option>
+      <option value="MG">MG</option>
+      <option value="Mini">Mini</option>
+      <option value="Mitsubishi">Mitsubishi</option>
+      <option value="Mitsuoka">Mitsuoka</option>
+      <option value="Morgan">Morgan</option>
+      <option value="Morris">Morris</option>
+      <option value="NIO">NIO</option>
+      <option value="Nissan">Nissan</option>
+      <option value="Noble">Noble</option>
+      <option value="Opel">Opel</option>
+      <option value="Pagani">Pagani</option>
+      <option value="Perodua">Perodua</option>
+      <option value="Peugeot">Peugeot</option>
+      <option value="Polestar">Polestar</option>
+      <option value="Pontiac">Pontiac</option>
+      <option value="Porsche">Porsche</option>
+      <option value="Proton">Proton</option>
+      <option value="Ram">Ram</option>
+      <option value="Reliant">Reliant</option>
+      <option value="Renault">Renault</option>
+      <option value="Rimac">Rimac</option>
+      <option value="Rivian">Rivian</option>
+      <option value="Rolls-Royce">Rolls-Royce</option>
+      <option value="RUF">RUF</option>
+      <option value="Saab">Saab</option>
+      <option value="Saleen">Saleen</option>
+      <option value="Saturn">Saturn</option>
+      <option value="Scion">Scion</option>
+      <option value="SEAT">SEAT</option>
+      <option value="Senova">Senova</option>
+      <option value="SIN-Cars">SIN Cars</option>
+      <option value="Skoda">Skoda</option>
+      <option value="Smart">Smart</option>
+      <option value="Spyker">Spyker</option>
+      <option value="Ssangyong">Ssangyong</option>
+      <option value="Subaru">Subaru</option>
+      <option value="Suzuki">Suzuki</option>
+      <option value="Tata">Tata</option>
+      <option value="Tatra">Tatra</option>
+      <option value="Tesla">Tesla</option>
+      <option value="Toyota">Toyota</option>
+      <option value="Trumpchi">Trumpchi</option>
+      <option value="TVR">TVR</option>
+      <option value="Vauxhall">Vauxhall</option>
+      <option value="Volkswagen">Volkswagen</option>
+      <option value="Volvo">Volvo</option>
+      <option value="W-Motors">W Motors</option>
+      <option value="Wiesmann">Wiesmann</option>
+      <option value="Zenos">Zenos</option>
+      <option value="Zenvo">Zenvo</option>
+      <option value="Other">Other</option>
+    </optgroup>
+</select></div>
                             <div class="mb-3"><textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Message"></textarea></div>
                             <div><button class="btn btn-primary shadow d-block w-100" type="submit" style="background: #ebe8e0;"><span style="color: rgb(208, 17, 16);">Send </span></button></div>
                         </form>
                     </div>
                 </div>
                 <div class="col-md-4 col-xl-4 col-xxl-4 offset-xxl-0 d-flex justify-content-center justify-content-xl-start">
-                    <div class="d-flex flex-wrap flex-md-column justify-content-md-start align-items-md-start justify-content-xxl-center h-100">
+                    <div class="d-flex flex-column flex-wrap flex-md-column justify-content-md-start align-items-md-start justify-content-lg-center justify-content-xl-center justify-content-xxl-center h-100">
                         <div class="d-flex align-items-center p-3">
                             <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md" style="background: #ebe8e0;"><i class="fas fa-truck-monster" style="color: #d01110;"></i></div>
                             <div class="px-2">
@@ -129,7 +270,7 @@
     </section>
     <footer class="bg-dark">
         <div class="container py-4 py-lg-5">
-            <div class="row justify-content-center">
+            <div class="row justify-content-evenly">
                 <div class="col-sm-4 col-md-3 text-center text-lg-start d-flex flex-column justify-content-xxl-center">
                     <h3 class="fs-6 fw-bold" style="font-family: Montserrat-Alt1;font-size: 18px;">Services / Products</h3>
                     <ul class="list-unstyled">
