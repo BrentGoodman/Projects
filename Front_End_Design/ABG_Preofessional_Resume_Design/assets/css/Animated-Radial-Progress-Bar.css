@@ -1,0 +1,72 @@
+#skill {
+  width: 100%;
+  height: fit-content;
+  color: black;
+  text-align: center;
+}
+
+#skill .row {
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-top: 52px;
+  padding-bottom: 10vh;
+}
+
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+svg.radial-progress {
+  height: auto;
+  max-width: 200px;
+  padding: 1em;
+  transform: rotate(-90deg);
+  width: 100%;
+}
+
+svg.radial-progress circle {
+  fill: rgba(0,0,0,0);
+  stroke: #fff;
+  stroke-dashoffset: 219.91148575129;
+  stroke-width: 10;
+}
+
+svg.radial-progress circle.incomplete {
+  opacity: 0.25;
+}
+
+svg.radial-progress circle.complete {
+  stroke-dasharray: 219.91148575129;
+}
+
+svg.radial-progress {
+  stroke-width: 5;
+}
+
+svg.web-design circle {
+  stroke: #30bae7;
+}
+
+svg.html-css circle {
+  stroke: #d74680;
+}
+
+svg.graphic-design circle {
+  stroke: #15c7a8;
+}
+
+svg.ui-ux circle {
+  stroke: #eb7d4b;
+}
+
+#skill p {
+  color: #7d8285;
+}
+
+#skill .intro {
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+

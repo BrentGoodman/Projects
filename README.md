@@ -44,6 +44,8 @@
 
 |            |      Projects        |       Area        |       Skills       |
 | :--------: | :--------: | :--------: | :-------- |
+| :diamond_shape_with_a_dot_inside: | American RoadForce Site | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: JavaScript <br> :small_blue_diamond: Bootstrap  |
+| :diamond_shape_with_a_dot_inside: | Professional Resume Site | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: JavaScript <br> :small_blue_diamond: Bootstrap  |
 | :diamond_shape_with_a_dot_inside: | 25 + 5 Clock | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: JavaScript <br> :small_blue_diamond: React.JS  |
 | :diamond_shape_with_a_dot_inside: | JavaScript Calculator | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: JavaScript <br> :small_blue_diamond: React.JS  |
 | :diamond_shape_with_a_dot_inside: | Drum Machine | Front-End Web Design | :small_blue_diamond: CSS <br> :small_blue_diamond: JavaScript <br> :small_blue_diamond: React.JS  |
@@ -226,6 +228,7 @@
 <br><br>
 
 > **[:arrow_double_up: Back to Top](#top)**
+
 
 
 
