@@ -1,0 +1,19 @@
+{
+    "timeZone": "America/Chicago",
+    "dependencies": {
+      "enabledAdvancedServices": [
+        {
+          "userSymbol": "Drive",
+          "serviceId": "drive",
+          "version": "v2"
+        }
+      ]
+    },
+    "exceptionLogging": "STACKDRIVER",
+    "oauthScopes": [
+      "https://www.googleapis.com/auth/drive.metadata.readonly",
+      "https://www.googleapis.com/auth/script.send_mail"
+    ],
+    "runtimeVersion": "V8"
+  }
+  
