@@ -4,7 +4,7 @@
  * */
 
 // Enter the email address for email notification
-const EMAIL = "goodman.brent@gmail.com";
+const EMAIL = "brent@texaspaceauthority.org";
 
 // How frequently should the watcher run? Put 2 for running every 2 days.
 const RUNNING_FREQUENCY = 1;
@@ -26,19 +26,19 @@ const disableDriveWatch = () => {
   });
 };
 
-// Select only user domains that are not "texaspaceauthority.com"
+// Select only user domains that are not "texaspaceauthority.org"
 
-const vendor = Drive.file.getDomain();
-for (var i = 0; i < vendor.length; i++) {
-  Logger.log(vendor[i].getDomain());
-}
-
+var owners = file.getOwner();
+for (var i = 0; i < owners.length; i++) {
+Logger.log(owners[i].getDomain());
+};
 
 const checkChangedFiles_ = (items) => {
   return items
     .map(({ file }) => file)
+    .map(({ domain }) => domain)
     .filter(({ id, alternateLink, title }) => id && alternateLink && title)
-    .filter(({emailAddress}) => emailAddress === EMAIL);
+    .filter(({vendor}) => vendor !== texaspaceauthority.org);
     .map((file) => {
       const {
         iconLink = "",
@@ -109,8 +109,8 @@ const watchGoogleDrive = () => {
     }
 
     if (items.length) {
-      const deletedItems = checkChangedFiles_(items);
-      sendEmail_(deletedItems);
+      const changedItems = checkChangedFiles_(items);
+      sendEmail_(changedItems);
     }
   } catch (f) {
     Logger.log(f)
