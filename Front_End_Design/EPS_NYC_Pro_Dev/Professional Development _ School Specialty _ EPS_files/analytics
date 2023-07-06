@@ -1,0 +1,30 @@
+
+function piResponse() {
+		piSetCookie('visitor_id153541', '752836978', 365);
+			piSetCookie('visitor_id153541-hash', '2b5df478bd2f7789ce6179a49bfd1fdca58459101f29fec9bc49a6e5cc6974d492f46008b61b23f8de6f191fa2c2d036b1301106', 365);
+		
+		if (document.location.protocol != "https:" || (document.location.protocol == "https:" && true)) {
+		var analytics_link = document.location.protocol + "//" + "www.newsschoolspecialty.com/analytics?";
+		pi.tracker.visitor_id='752836978';
+
+				pi.tracker.visitor_id_sign='2b5df478bd2f7789ce6179a49bfd1fdca58459101f29fec9bc49a6e5cc6974d492f46008b61b23f8de6f191fa2c2d036b1301106';
+		
+				pi.tracker.campaign_id='7098';
+		
+		var variables = 'conly=true';
+		for (property in pi.tracker) {
+					variables += "&" + property + "=" + encodeURIComponent(pi.tracker[property]);
+				}
+		var headID = document.getElementsByTagName("head")[0];
+		piScriptObj[piScriptNum] = document.createElement('script');
+		piScriptObj[piScriptNum].type = 'text/javascript';
+		piScriptObj[piScriptNum].src = analytics_link + variables;
+		headID.appendChild(piScriptObj[piScriptNum]);
+		piScriptObj[piScriptNum].onload = function() { return; }
+	}
+	}
+piResponse();
+
+
+
+

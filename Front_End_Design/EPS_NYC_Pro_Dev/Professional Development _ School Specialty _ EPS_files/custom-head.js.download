@@ -1,0 +1,69 @@
+/**
+ * Get value of url variable. 
+ * Usage example: http://example.com?foo=bar
+ * getQueryStringValue(foo) // returns "bar" 
+ *
+ * @param {String} variable 
+ * @return {String}
+ */
+function getQueryStringValue(variable) {
+    var query = window.location.search.substring(1);
+    var vars = query.split("&");
+    for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        if (pair[0] == variable) { return pair[1]; }
+    }
+    return (false);
+}
+
+/**
+ * Google Analytics wrapper functions
+ */
+//Google event
+function gaEvent(category, action, opt_label, opt_value, opt_noninteraction) {
+    if (category == undefined || action == undefined)
+        return; //missing required fields
+
+    opt_label = (opt_label == undefined) ? ('') : (opt_label); //define optional param
+    opt_value = (opt_value == undefined) ? (null) : (opt_value); //define optional param
+    opt_noninteraction = (opt_noninteraction == undefined) ? (null) : (opt_noninteraction); //define optional param         
+
+    // use tag manager dataLayer
+
+    window.dataLayer.push({
+        'event': 'GAevent',
+        'eventCategory': category,
+        'eventAction': action,
+        'eventLabel': opt_label
+    })
+}
+//Google custom variable
+// BZS (SMH) 3/23/16: This appears to be an unused function. If it is going to be used then
+// the following changes to analytics Administration will become important
+// https://developers.google.com/analytics/devguides/collection/upgrade/reference/gajs-analyticsjs#custom-vars
+function gaCustomVar(slot, name, value, scope) {
+    if (slot == undefined || name == undefined || value == undefined)
+        return; //missing required fields
+
+    scope = (scope == undefined) ? (3) : (scope); //define optional param: 1 (visitor-level), 2 (session-level), or 3 [default] (page-level)
+
+    // universal analytics    
+    ga('set', name, value);
+}
+//Google pageview
+function gaPageview(url, title) {
+    if (url == undefined)
+        return; // missing required field
+
+    try {
+        // use tag manager dataLayer
+        window.dataLayer.push({
+            'event': 'VirtualPageview',
+            'virtualPageURL': url,
+            'virtualPageTitle': title
+        })       
+    }
+    catch (err) { }
+}
+
+window.dataLayer = window.dataLayer || [];
